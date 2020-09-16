@@ -109,6 +109,7 @@ tracks:
       -i :{release_inc} --os-name debian --os-not-required
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc}
+      --skip-keys python3-flake8
     devel_branch: eloquent
     last_version: 0.8.9
     name: upstream
